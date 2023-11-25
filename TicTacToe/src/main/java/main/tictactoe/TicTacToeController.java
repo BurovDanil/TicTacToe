@@ -21,6 +21,9 @@ public class TicTacToeController {
     @FXML
     private Button resetButton;
 
+    private int countX;
+    private int countY;
+
     //
 
 
@@ -82,7 +85,7 @@ public class TicTacToeController {
             }
         }
         if(board[0][0] == currentPlayer && board[1][1] == currentPlayer && board[2][2] == currentPlayer){
-            System.out.println("Left-Right Diagonal win!");
+//            message.setText("You won!");
             resetGame();
             return true;
         }
